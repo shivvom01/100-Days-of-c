@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 #include<string.h>
-void main()
+int main()
 {
 	int a[5],i,n;
 	 char choice[3];
@@ -20,6 +20,7 @@ void main()
 if(strcmp(choice,"no")==0)
 {
 printf("\nNo changes made");
+return 0;
 }
 else
 {
@@ -29,10 +30,10 @@ for(i=0;i<5;i++)
 	{
 if(a[i]==n)
 {
-printf("\n Enter a new number=");
+	printf("\n Enter a new number=");
 scanf("%d", &a[i]);
 }
-	}
+}
 }
 printf("\nThe numbers after the changes are=\n");
 for(i=0;i<5;i++)
