@@ -1,9 +1,9 @@
 #include <stdio.h>
 int main()
 {
-    int n, x, left = 0, right = 0;
+    int n, x, left = 0, right;
     printf("Enter n: "); scanf("%d", &n);
-    for(x = 1; x <= n; x++) right += x;
+    right = n * (n + 1) / 2;
     for(x = 1; x <= n; x++)
     {
         left += x;
